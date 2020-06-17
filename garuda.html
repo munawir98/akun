@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan Box Model</title>
+        <style>
+            body {
+                font: 16px/28px arial, sans-serif; background-color:#eaeaea; color: #333;
+            }
+            .top-bar {
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                height: 40px;
+                background-color: lightskyblue; border-bottom: 3px dotted salmon;
+                z-index: 9999;
+            }
+            .container {
+                width: 960px;margin: 80px auto; background-color: thistle; position: relative;
+            }
+            .google {
+                width: 200px; height: 200px; background-repeat: no-repeat; display: inline-block; text-indent: -99999px; position: absolute; right: -150px;
+            }
+            .header {
+                padding: 2px;
+                padding-bottom: 0px;
+                margin-left: -20PX;
+            }
+            .header .judul {
+                font-size: 40px; font-weight: bold; margin-left: 40px;
+            }
+            .header ul li {
+                display: inline-block; margin-top: -30PX;
+            }
+            .header a {
+                text-decoration: none;
+                color: salmon;
+                padding: 3px;
+            }
+            .header a:hover {
+                background-color: lightskyblue;
+                color: white;
+            }
+            .hero {
+                height: 300px;
+                background-image: url(https://cdn.pixabay.com/photo/2014/10/26/17/19/fishermen-504098_960_720.jpg);
+                background-size: cover;
+                background-position: 0 -5px;
+                border-top: 5px dotted yellow;
+                border-bottom: 5px dashed yellowgreen;
+            }
+            .main {
+                width: 600px;
+                padding:20px ;
+                box-sizing: border-box;
+                float: left;
+            }
+            .main h2 {
+                font-size: 25px; font-weight: bold;margin-top: -5px;
+            }
+            .main .penulis {
+                font-size: 11px;
+                margin-top: -25px;
+            }
+            .main .penulis a {
+                color: salmon;
+                text-decoration: none;
+            }
+            .main p {
+                margin-bottom: 20px;
+                font-size: 13px;
+                text-align: justify;
+            }
+            /* sidebar */
+            .sidebar {
+                width: 300px;
+                float: right;
+                box-sizing: border-box; margin-right: 20px;
+            
+            }
+            .sidebar h3 {
+                font-weight: bold; color: brown;
+            }
+            .sidebar img {
+                width: 70px; height: 70px;
+                float: left; padding-right: 10px;
+            }
+            .sidebar p {
+                font: 12px/18px arial;
+                text-align: justify;
+            }
+
+            .footer {
+                background-color: #333;
+                color: #eaeaea;
+                text-align: center;
+                font-size: 12px;
+                padding: 2px;
+            }
+            /* clear fix*/
+            .cf:before,
+            .cf:after {
+                content:"";/*1*/
+                display: table; /*2*/
+            }
+            .cf:after {
+                clear: both;
+            }
+            .cf {
+                *zoom: 1;
+            }
+        </style>
+    </head> 
+    <body>
+        <div class="top-bar"></div>
+        <div class="container">
+            <a href="http://google.com" class="google" target="_blank">google</a>
+            <div class="header">
+                <h1 class="judul">Munawir Website</h1>
+                <ul>
+                    <li><a href="kontak.html">home</a></li>
+                    <li><a href="Adress.html">about</a></li>
+                    <li><a href="index.html">produks</a></li>
+                    <li><a href="galaksi.html">servies</a></li>
+                    <li><a href="komen.html">contacs</a></li>
+                </ul>
+            </div>
+            <div class="hero"></div>
+            <div class="content cf">
+                <div class="main">
+                    <h2>Belajar Bahsa Pemograman</h2>
+                    <P class="penulis">ditulis oleh <a href="#">Munawir</a>. pada 8 Mei 2020</P>
+                    <p>Bahasa pemograman adalah bahasa yang sering digunakan oleh seorang programer dalam membuat sebuah pemograman. dan dalam membuat sebuah pemograman tentunya harus melibatkan banyak sekali bahasa pemograman yang harus dipakai kurang lebih ada seribu bahasa pemograman.</p>
+
+                    <p>Bahasa pemograman adalah bahasa yang sering digunakan oleh seorang programer dalam membuat sebuah pemograman. dan dalam membuat sebuah pemograman tentunya harus melibatkan banyak sekali bahasa pemograman yang harus dipakai kurang lebih ada seribu bahasa pemograman yang ada di pemogramn komputer saat ini. ini dilihat dari apa yng bisa digunakan dalam mengatur sebuah area pengaturan bahasa pemograman. Oleh karena itu bahasa pemograman ini sangat dibutuhkan untuk membuat sebuah program sebuah website, ataupun itu aplikasi dekstop sekalipun.</p>
+
+                    <p>Bahasa pemograman adalah bahasa yang sering digunakan oleh seorang programer dalam membuat sebuah pemograman. dan dalam membuat sebuah pemograman tentunya harus melibatkan banyak sekali bahasa pemograman yang harus dipakai.</p>
+                </div>
+                <div class="sidebar">
+                    <h3>Tentang Penulis</h3>
+                    <img src="C:\Users\acer\Pictures\gambar.gif" alt="munawir">
+                    <p>Munawir adalah merupakan anak ke 6 dari pasangan bapak H. Abdurahman (alm) dan ibu masrifah (almah). Dia dilahirkan di desa Tinumpuk, Kec. Juntinyuat, Kab. Indramayu. Jawa Barat-Indonesia. penulis mengawali pendidikan dasarnya di SDN TINUMPUK II, Kemudian melanjutkan sekolah di SMPN 2 Juntinyuat. Setelah dinyatakan lulus pada tahun 2012 dia diberikan kesempatan untuk melanjutkan studinya di yayasan pondok pesantren Al-Ashriyyah Nurul Iman, Parung-Bogor. Di sana juga penulis mendalami ilmu agamanya yang sebenarnya sudah dari kecil sudah dibina oleh guru2 spiritual namun pada kesempatan yang berbahagia itu penulis diizinkan untuk menjadi murid dari maha guru yang sangat agung keturunan baginda agung Muhammad.SAW. yaiatu: Syaiduna Syaikh Al-Kabir Al-Habib Saqqaf bin Mahdi bin Syaikh Abu Bakar bin Salim. dan sekarang penulis sedang melaksanakan program pengabdian nya setelah kurang lebih 7 tahun menimba ilmu dan menggunakan fasilitas yang ada baik bidang keilmuan maupun fasilitas umum lainnya. akhir kata hanya untaian terima kasih banyak yg penulis bisa ucapakan atas jasa2 dan pengorbanan baik material maupun immaterial. </p>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <p class="copy">Copyright 2020. MUNAWIR.</p>
+            </div>
+        </div>
+    </body>
+</html>

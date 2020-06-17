@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title>Flot</title>
+    </head>
+    <style>
+        .container {
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+            font-family: Arial;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            border: 5px solid #333;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        header {
+            background-color: violet;
+            padding: 40px;
+        }
+        .content::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .sidebar {
+            float: left;
+            width: 40%;
+        }
+        .sidebar aside {
+            background-color: tomato;
+            padding: 60px;
+        }
+        .sidebar nav {
+            background-color: teal;
+            padding: 100px;
+        }
+
+        main {
+            background-color: yellowgreen;
+            padding: 171.5px;
+            width: 60%;
+            box-sizing: border-box;
+            float: right;
+        }
+
+        footer {
+            background-color: turquoise;
+            padding: 20px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <header>Header</header>
+            <div class="content">
+                <div class="sidebar">
+                    <aside>Aside</aside>
+                    <nav>Nav</nav>
+                </div>
+                <main>Main</main>
+              
+            </div>
+            
+
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
